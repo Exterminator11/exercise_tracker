@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03B67860724B28A50ABE4679 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 05DD68D5DAB84ACADE8AB53D /* GRDB */; };
+		1B50376CF2866BC115B9CCCD /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10778EC2D662A57E3A98F410 /* DatabaseManager.swift */; };
+		269A8FD00D3CA238198D751B /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9D123428F909B9A5195EA6 /* RootView.swift */; };
+		2832B6D57360CF6C29FA42A6 /* ExerciseTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B712900EAFF49908F24173 /* ExerciseTrackerApp.swift */; };
+		28B448FDF6F24A5F192A17BD /* EditPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D31E2911338C121F77E547 /* EditPlanView.swift */; };
+		373A369C9837C26F27BDD67D /* PlanSetupDayCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71910710979F82FC318E7BBD /* PlanSetupDayCountView.swift */; };
+		633715A8519E8DC90D1DDA25 /* ExerciseEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA20E91C8F136874A5C47140 /* ExerciseEditView.swift */; };
+		6472732F4FD5A9664AE6F14A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9452A484D3001A8249110EBF /* HomeView.swift */; };
+		8AB364A843218C5550800BDA /* Migrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F566F6C6A8BDFFCCA0417 /* Migrations.swift */; };
+		8AC6A1ED0EF9C4A07368AB57 /* ActiveWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BF42D3027AAC85855692B /* ActiveWorkoutView.swift */; };
+		8C34D3AE179FC2D9617C59DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A559D984956E5856AB47EC21 /* Assets.xcassets */; };
+		B04517A775D6972691D9345B /* WorkoutPlanImport.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9EC3F99F4C4AB8A94B65BD /* WorkoutPlanImport.swift */; };
+		B1A26C9F015ADE44722476ED /* PlanSetupDayConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8E19942D1C9E5E3830A136 /* PlanSetupDayConfigView.swift */; };
+		B3E85772AE0F747DF7E67936 /* DatabaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C060E6D397BE1041AA0D885D /* DatabaseTests.swift */; };
+		B9C25D3B489E4181E82B35DF /* Records.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6842D90C4168935EF837BC /* Records.swift */; };
+		BFFA086C3217DA1DE28B6B19 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644A67B4B67580D36CD3F22C /* HistoryView.swift */; };
+		E23C28B6A47D53709200A3FB /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04750AEBCD1D431E18C90633 /* AppState.swift */; };
+		E83FFFA8BA585BC7F03F4004 /* PlanCreationChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DD9EB61DDA7758AC025782 /* PlanCreationChoiceView.swift */; };
+		EE34CC8780B14C1EFCE0FC9F /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 96F67D3303363A4D522756D5 /* GRDB */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFF279E73D52401FCA69F1FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BEB61F18E2E979F80C9F346 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F1B6D8444ABB0EDD7C929EB;
+			remoteInfo = ExerciseTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04750AEBCD1D431E18C90633 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		10778EC2D662A57E3A98F410 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		186F566F6C6A8BDFFCCA0417 /* Migrations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Migrations.swift; sourceTree = "<group>"; };
+		1A8E19942D1C9E5E3830A136 /* PlanSetupDayConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanSetupDayConfigView.swift; sourceTree = "<group>"; };
+		2B8CCF65B516515D911578BB /* ExerciseTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExerciseTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39D31E2911338C121F77E547 /* EditPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPlanView.swift; sourceTree = "<group>"; };
+		48DD9EB61DDA7758AC025782 /* PlanCreationChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanCreationChoiceView.swift; sourceTree = "<group>"; };
+		4E9BF42D3027AAC85855692B /* ActiveWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveWorkoutView.swift; sourceTree = "<group>"; };
+		644A67B4B67580D36CD3F22C /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		71910710979F82FC318E7BBD /* PlanSetupDayCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanSetupDayCountView.swift; sourceTree = "<group>"; };
+		9452A484D3001A8249110EBF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9ED63B47DEE845D34D18D8A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9F6842D90C4168935EF837BC /* Records.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Records.swift; sourceTree = "<group>"; };
+		A559D984956E5856AB47EC21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8B712900EAFF49908F24173 /* ExerciseTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTrackerApp.swift; sourceTree = "<group>"; };
+		C060E6D397BE1041AA0D885D /* DatabaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseTests.swift; sourceTree = "<group>"; };
+		E5E25D89163A7BE819D4D2FA /* ExerciseTrackerTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ExerciseTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB9EC3F99F4C4AB8A94B65BD /* WorkoutPlanImport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutPlanImport.swift; sourceTree = "<group>"; };
+		EC9D123428F909B9A5195EA6 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		FA20E91C8F136874A5C47140 /* ExerciseEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseEditView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E16C9FD8FE35FF1639B5D1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03B67860724B28A50ABE4679 /* GRDB in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86165759AF599A79C410117C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE34CC8780B14C1EFCE0FC9F /* GRDB in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		026D618EA8F892A257AB858B /* ExerciseTracker */ = {
+			isa = PBXGroup;
+			children = (
+				04750AEBCD1D431E18C90633 /* AppState.swift */,
+				B8B712900EAFF49908F24173 /* ExerciseTrackerApp.swift */,
+				EC9D123428F909B9A5195EA6 /* RootView.swift */,
+				2A1531B88B3314F9E3E3448A /* Database */,
+				B7856900279F7E691FCDB208 /* Models */,
+				AAB9B3C6AB5E162FB9EFBF1E /* Resources */,
+				A596377D4F24A26586C324C4 /* Views */,
+			);
+			path = ExerciseTracker;
+			sourceTree = "<group>";
+		};
+		2A1531B88B3314F9E3E3448A /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				10778EC2D662A57E3A98F410 /* DatabaseManager.swift */,
+				186F566F6C6A8BDFFCCA0417 /* Migrations.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		2AC2F5575EB3AB5C759918EE /* History */ = {
+			isa = PBXGroup;
+			children = (
+				644A67B4B67580D36CD3F22C /* HistoryView.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		5C8FF91B5B18585E1A665CA0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9452A484D3001A8249110EBF /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7E891397D61FEE1C2F8F7765 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B8CCF65B516515D911578BB /* ExerciseTracker.app */,
+				E5E25D89163A7BE819D4D2FA /* ExerciseTrackerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98135351D9C23CA9DA8554B6 /* Workout */ = {
+			isa = PBXGroup;
+			children = (
+				4E9BF42D3027AAC85855692B /* ActiveWorkoutView.swift */,
+			);
+			path = Workout;
+			sourceTree = "<group>";
+		};
+		A596377D4F24A26586C324C4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2AC2F5575EB3AB5C759918EE /* History */,
+				5C8FF91B5B18585E1A665CA0 /* Home */,
+				CB1383BB5B8CEE9E1665E6DA /* PlanSetup */,
+				98135351D9C23CA9DA8554B6 /* Workout */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AAB9B3C6AB5E162FB9EFBF1E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A559D984956E5856AB47EC21 /* Assets.xcassets */,
+				9ED63B47DEE845D34D18D8A9 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B7856900279F7E691FCDB208 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9F6842D90C4168935EF837BC /* Records.swift */,
+				EB9EC3F99F4C4AB8A94B65BD /* WorkoutPlanImport.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CB1383BB5B8CEE9E1665E6DA /* PlanSetup */ = {
+			isa = PBXGroup;
+			children = (
+				39D31E2911338C121F77E547 /* EditPlanView.swift */,
+				FA20E91C8F136874A5C47140 /* ExerciseEditView.swift */,
+				48DD9EB61DDA7758AC025782 /* PlanCreationChoiceView.swift */,
+				1A8E19942D1C9E5E3830A136 /* PlanSetupDayConfigView.swift */,
+				71910710979F82FC318E7BBD /* PlanSetupDayCountView.swift */,
+			);
+			path = PlanSetup;
+			sourceTree = "<group>";
+		};
+		E3ABD433CA62B17874F0E59F /* ExerciseTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				C060E6D397BE1041AA0D885D /* DatabaseTests.swift */,
+			);
+			path = ExerciseTrackerTests;
+			sourceTree = "<group>";
+		};
+		FF534367497502ABAD4B5D74 = {
+			isa = PBXGroup;
+			children = (
+				026D618EA8F892A257AB858B /* ExerciseTracker */,
+				E3ABD433CA62B17874F0E59F /* ExerciseTrackerTests */,
+				7E891397D61FEE1C2F8F7765 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F1B6D8444ABB0EDD7C929EB /* ExerciseTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 729F5DD5F05524CC411199D5 /* Build configuration list for PBXNativeTarget "ExerciseTracker" */;
+			buildPhases = (
+				21D94F6F2E2C9CE1D877CAEA /* Sources */,
+				95E01BF7B374EED9FF0DA7FA /* Resources */,
+				86165759AF599A79C410117C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExerciseTracker;
+			packageProductDependencies = (
+				96F67D3303363A4D522756D5 /* GRDB */,
+			);
+			productName = ExerciseTracker;
+			productReference = 2B8CCF65B516515D911578BB /* ExerciseTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C8E4DF5DD1861B58AF5B4918 /* ExerciseTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56B0B31851CFC7F3B258BA09 /* Build configuration list for PBXNativeTarget "ExerciseTrackerTests" */;
+			buildPhases = (
+				FB9F94230179E8CDBAD4DE50 /* Sources */,
+				3E16C9FD8FE35FF1639B5D1A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBEF059CF8522DA4CED3660F /* PBXTargetDependency */,
+			);
+			name = ExerciseTrackerTests;
+			packageProductDependencies = (
+				05DD68D5DAB84ACADE8AB53D /* GRDB */,
+			);
+			productName = ExerciseTrackerTests;
+			productReference = E5E25D89163A7BE819D4D2FA /* ExerciseTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BEB61F18E2E979F80C9F346 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2660;
+			};
+			buildConfigurationList = 5A60E328D6A59A7203133A91 /* Build configuration list for PBXProject "ExerciseTracker" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = FF534367497502ABAD4B5D74;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F3BDF6BC9461DC37CD87833B /* XCRemoteSwiftPackageReference "GRDB" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 7E891397D61FEE1C2F8F7765 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F1B6D8444ABB0EDD7C929EB /* ExerciseTracker */,
+				C8E4DF5DD1861B58AF5B4918 /* ExerciseTrackerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95E01BF7B374EED9FF0DA7FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C34D3AE179FC2D9617C59DB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21D94F6F2E2C9CE1D877CAEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AC6A1ED0EF9C4A07368AB57 /* ActiveWorkoutView.swift in Sources */,
+				E23C28B6A47D53709200A3FB /* AppState.swift in Sources */,
+				1B50376CF2866BC115B9CCCD /* DatabaseManager.swift in Sources */,
+				28B448FDF6F24A5F192A17BD /* EditPlanView.swift in Sources */,
+				633715A8519E8DC90D1DDA25 /* ExerciseEditView.swift in Sources */,
+				2832B6D57360CF6C29FA42A6 /* ExerciseTrackerApp.swift in Sources */,
+				BFFA086C3217DA1DE28B6B19 /* HistoryView.swift in Sources */,
+				6472732F4FD5A9664AE6F14A /* HomeView.swift in Sources */,
+				8AB364A843218C5550800BDA /* Migrations.swift in Sources */,
+				E83FFFA8BA585BC7F03F4004 /* PlanCreationChoiceView.swift in Sources */,
+				B1A26C9F015ADE44722476ED /* PlanSetupDayConfigView.swift in Sources */,
+				373A369C9837C26F27BDD67D /* PlanSetupDayCountView.swift in Sources */,
+				B9C25D3B489E4181E82B35DF /* Records.swift in Sources */,
+				269A8FD00D3CA238198D751B /* RootView.swift in Sources */,
+				B04517A775D6972691D9345B /* WorkoutPlanImport.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB9F94230179E8CDBAD4DE50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3E85772AE0F747DF7E67936 /* DatabaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBEF059CF8522DA4CED3660F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F1B6D8444ABB0EDD7C929EB /* ExerciseTracker */;
+			targetProxy = AFF279E73D52401FCA69F1FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1A61620347AC5A54ACF95D81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.exercisetracker.ExerciseTrackerTests;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExerciseTracker.app/ExerciseTracker";
+			};
+			name = Release;
+		};
+		68B6149531D50EEC3F1CCB1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		69867D543D877DFE6CBA2D0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 73PX233PL6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ExerciseTracker/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Exercise Tracker";
+				INFOPLIST_KEY_CFBundleShortVersionString = 1.0;
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "-enable-bare-slash-regex";
+				PRODUCT_BUNDLE_IDENTIFIER = com.exercisetracker.ExerciseTracker;
+				PRODUCT_NAME = ExerciseTracker;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71F18BE14DC97429C94EE10E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DEBF7AC91FA90F148FB857B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 73PX233PL6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ExerciseTracker/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Exercise Tracker";
+				INFOPLIST_KEY_CFBundleShortVersionString = 1.0;
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "-enable-bare-slash-regex";
+				PRODUCT_BUNDLE_IDENTIFIER = com.exercisetracker.ExerciseTracker;
+				PRODUCT_NAME = ExerciseTracker;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F2511716C008031044575BD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.exercisetracker.ExerciseTrackerTests;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExerciseTracker.app/ExerciseTracker";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56B0B31851CFC7F3B258BA09 /* Build configuration list for PBXNativeTarget "ExerciseTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2511716C008031044575BD8 /* Debug */,
+				1A61620347AC5A54ACF95D81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5A60E328D6A59A7203133A91 /* Build configuration list for PBXProject "ExerciseTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71F18BE14DC97429C94EE10E /* Debug */,
+				68B6149531D50EEC3F1CCB1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		729F5DD5F05524CC411199D5 /* Build configuration list for PBXNativeTarget "ExerciseTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69867D543D877DFE6CBA2D0E /* Debug */,
+				DEBF7AC91FA90F148FB857B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F3BDF6BC9461DC37CD87833B /* XCRemoteSwiftPackageReference "GRDB" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		05DD68D5DAB84ACADE8AB53D /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3BDF6BC9461DC37CD87833B /* XCRemoteSwiftPackageReference "GRDB" */;
+			productName = GRDB;
+		};
+		96F67D3303363A4D522756D5 /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3BDF6BC9461DC37CD87833B /* XCRemoteSwiftPackageReference "GRDB" */;
+			productName = GRDB;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3BEB61F18E2E979F80C9F346 /* Project object */;
+}

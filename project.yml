@@ -1,0 +1,73 @@
+name: ExerciseTracker
+options:
+  bundleIdPrefix: com.exercisetracker
+  deploymentTarget:
+    iOS: "17.0"
+  swiftVersion: "6.0"
+  minimumXcodeGenVersion: "2.40.0"
+  xcodeVersion: "26.6"
+packages:
+  GRDB:
+    url: https://github.com/groue/GRDB.swift
+    from: "6.0.0"
+targets:
+  ExerciseTracker:
+    type: application
+    platform: iOS
+    sources:
+      - path: ExerciseTracker
+    resources:
+      - path: ExerciseTracker/Resources/Assets.xcassets
+    dependencies:
+      - package: GRDB
+        product: GRDB
+    settings:
+      base:
+        SWIFT_EMIT_LOC_STRINGS: YES
+        ENABLE_PREVIEWS: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Exercise Tracker
+        INFOPLIST_KEY_CFBundleShortVersionString: "1.0"
+        INFOPLIST_KEY_CFBundleVersion: "1"
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: true
+        INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: true
+        SWIFT_STRICT_CONCURRENCY: complete
+        OTHER_SWIFT_FLAGS:
+          - -enable-bare-slash-regex
+        PRODUCT_NAME: ExerciseTracker
+    info:
+      path: ExerciseTracker/Resources/Info.plist
+      properties:
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+  ExerciseTrackerTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: ExerciseTrackerTests
+    dependencies:
+      - target: ExerciseTracker
+      - package: GRDB
+        product: GRDB
+    settings:
+      base:
+        SWIFT_STRICT_CONCURRENCY: complete
+        GENERATE_INFOPLIST_FILE: YES
+schemes:
+  ExerciseTracker:
+    build:
+      targets:
+        ExerciseTracker: all
+    test:
+      targets:
+        - ExerciseTrackerTests
+    run:
+      config: Debug
+      executable: ExerciseTracker
